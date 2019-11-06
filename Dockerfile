@@ -7,12 +7,12 @@ ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 
 # 设置应用目录
-WORKDIR /compile
-RUN mkdir -p /compile
-COPY . /compile
+WORKDIR /base
+RUN mkdir -p /base
+COPY . /base
 
 # 安装依赖
-RUN mvn clean compile -Dmaven.test.skip=true
+RUN mvn clean package -Dmaven.test.skip=true
 
 EXPOSE 8080
 CMD ["catalina.sh","run"]
