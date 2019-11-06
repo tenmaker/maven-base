@@ -261,8 +261,9 @@
             <id>nexus-10maker</id>
             <url>https://lib.10maker.com/repository/maven-public/</url>
             <releases>
+<!--                <enabled>true</enabled>-->
+<!--                <updatePolicy>always</updatePolicy>-->
                 <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
             </releases>
         </repository>
     </repositories>
