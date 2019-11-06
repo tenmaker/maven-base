@@ -23,12 +23,6 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>com.bite</groupId>
-            <artifactId>common</artifactId>
-            <version>1.1</version>
-        </dependency>
-
         <!-- CFCA -->
         <dependency>
             <groupId>cfca.common</groupId>
@@ -256,15 +250,6 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>
-        <repository>
-            <id>nexus-10maker</id>
-            <url>https://lib.10maker.com/repository/maven-public/</url>
-            <releases>
-<!--                <enabled>true</enabled>-->
-<!--                <updatePolicy>always</updatePolicy>-->
-                <enabled>true</enabled>
-            </releases>
         </repository>
     </repositories>
 
