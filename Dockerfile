@@ -14,5 +14,5 @@ COPY . /base
 # 安装依赖
 RUN mvn clean package -Dmaven.test.skip=true
 
-EXPOSE 8080
-CMD ["catalina.sh","run"]
+# 清理镜像
+RUN rm -rf /base
