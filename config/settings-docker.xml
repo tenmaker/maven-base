@@ -1,0 +1,35 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      https://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <localRepository>/usr/share/maven/ref/repository</localRepository>
+
+  <servers>
+    <server>
+      <id>rdc-releases</id>
+      <username>FbJCDG</username>
+      <password>p5Vqnphgk1</password>
+    </server>
+    <server>
+      <id>rdc-snapshots</id>
+      <username>FbJCDG</username>
+      <password>p5Vqnphgk1</password>
+    </server>
+  </servers>
+
+  <profiles>
+    <profile>
+      <id>rdc-private-repo</id>
+      <repositories>
+        <repository>
+          <id>rdc-releases</id>
+          <url>https://repo.rdc.aliyun.com/repository/35800-release-iLbeWu/</url>
+        </repository>
+        <repository>
+          <id>rdc-snapshots</id>
+          <url>https://repo.rdc.aliyun.com/repository/35800-snapshot-hbwPbA/</url>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+</settings>

@@ -10,6 +10,7 @@ ENV PATH $CATALINA_HOME/bin:$PATH
 WORKDIR /base
 RUN mkdir -p /base
 COPY . /base
+COPY config/settings-docker.xml /root/.m2/settings-docker.xml
 
 # 安装依赖
 RUN mvn clean package -Dmaven.test.skip=true
