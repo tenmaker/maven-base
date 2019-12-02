@@ -251,6 +251,10 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/35800-release-iLbeWu/</url>
+        </repository>
     </repositories>
 
 </project>
