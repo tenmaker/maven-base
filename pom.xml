@@ -244,16 +244,16 @@
 
     <repositories>
         <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/35800-release-iLbeWu/</url>
+        </repository>
+        <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>
-        <repository>
-            <id>rdc-releases</id>
-            <url>https://repo.rdc.aliyun.com/repository/35800-release-iLbeWu/</url>
         </repository>
     </repositories>
 
