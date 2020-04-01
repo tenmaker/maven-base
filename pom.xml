@@ -49,6 +49,17 @@
             <artifactId>logback-cfca-jdk1.6</artifactId>
             <version>3.2.0.0</version>
         </dependency>
+        <!-- 数据服务 -->
+        <dependency>
+            <groupId>cfca</groupId>
+            <artifactId>cpcn-dsp-api</artifactId>
+            <version>1.0.0.42</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
 
         <!-- spring-boot-dependencies -->
         <dependency>
@@ -121,6 +132,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
+        <!-- todo: 加入 ribbon、hystrix ？ -->
 
         <!-- DocuSign -->
         <dependency>
@@ -197,6 +209,13 @@
             <groupId>com.alipay.sdk</groupId>
             <artifactId>alipay-sdk-java</artifactId>
             <version>4.6.0.ALL</version>
+        </dependency>
+        <!-- alipay 依赖的 org.bouncycastle:bcprov-jdk15on.1.62.jar 没有自动下载 -->
+        <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.62</version>
         </dependency>
 
         <!-- qrcoder -->
