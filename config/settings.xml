@@ -18,6 +18,17 @@
   </servers>
 
   <profiles>
+    <!-- added on 2020/04/13, for self-founded maven repo -->
+    <profile>
+      <id>tenmaker-private-repo</id>
+      <repositories>
+        <repository>
+          <id>tenmaker</id>
+          <url>https://repo.10maker.com/repository/maven-public/</url>
+        </repository>
+      </repositories>
+    </profile>
+    <!-- AliYun maven repo -->
     <profile>
       <id>rdc-private-repo</id>
       <repositories>
@@ -32,4 +43,9 @@
       </repositories>
     </profile>
   </profiles>
+
+  <!-- added on 2020/04/13 -->
+  <activeProfiles>
+    <activeProfile>tenmaker-private-repo</activeProfile>
+  </activeProfiles>
 </settings>
