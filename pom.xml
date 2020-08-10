@@ -127,6 +127,10 @@
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
 
         <!--  spring-cloud-dependencies -->
         <dependency>
@@ -146,7 +150,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-        <!-- todo: 加入 ribbon、hystrix ？ -->
 
         <!-- DocuSign -->
         <dependency>
@@ -274,7 +277,12 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.4.4</version>
+            <version>3.5.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.3</version>
         </dependency>
 
         <dependency>
@@ -324,12 +332,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-<!--
-        <repository>
-            <id>rdc-releases</id>
-            <url>https://repo.rdc.aliyun.com/repository/35800-release-iLbeWu/</url>
-        </repository>
--->
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
