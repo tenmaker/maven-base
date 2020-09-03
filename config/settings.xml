@@ -6,46 +6,26 @@
 
   <servers>
     <server>
-      <id>rdc-releases</id>
-      <username>FbJCDG</username>
-      <password>p5Vqnphgk1</password>
-    </server>
-    <server>
-      <id>rdc-snapshots</id>
-      <username>FbJCDG</username>
-      <password>p5Vqnphgk1</password>
+      <id>bite-r</id>
+      <username>horse</username>
+      <password>123456</password>
     </server>
   </servers>
 
   <profiles>
-    <!-- added on 2020/04/13, for self-founded maven repo -->
+    <!-- added on 2020/09/01, for self-founded maven repo  -->
     <profile>
-      <id>tenmaker-private-repo</id>
+      <id>bite-private-repo</id>
       <repositories>
         <repository>
-          <id>tenmaker</id>
-          <url>https://repo.10maker.com/repository/maven-public/</url>
-        </repository>
-      </repositories>
-    </profile>
-    <!-- AliYun maven repo -->
-    <profile>
-      <id>rdc-private-repo</id>
-      <repositories>
-        <repository>
-          <id>rdc-releases</id>
-          <url>https://repo.rdc.aliyun.com/repository/35800-release-iLbeWu/</url>
-        </repository>
-        <repository>
-          <id>rdc-snapshots</id>
-          <url>https://repo.rdc.aliyun.com/repository/35800-snapshot-hbwPbA/</url>
+          <id>bite</id>
+          <url>https://repo.biteinvestments.com/repository/maven-public/</url>
         </repository>
       </repositories>
     </profile>
   </profiles>
 
-  <!-- added on 2020/04/13 -->
   <activeProfiles>
-    <activeProfile>tenmaker-private-repo</activeProfile>
+    <activeProfile>bite-private-repo</activeProfile>
   </activeProfiles>
 </settings>
